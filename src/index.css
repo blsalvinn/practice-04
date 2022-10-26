@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-limit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ } 
+
+.text-limit-two {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.changed {
+    background: red;
+}  
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+    background: #FFF;
+}
+
+a {
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: inherit !important;
+}
+
+span.active {
+ @apply text-main
+}
+
+.papurlar-category button.active {
+    @apply  bg-white !text-main rounded-sm
+}
+
+::-webkit-scrollbar {
+   @apply lg:w-[8px]
+}  
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent    
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-main rounded-md
+}
+
+th {
+    @apply text-lg
+}
+
+.tableCartPage::-webkit-scrollbar {
+    @apply lg:w-0
+}  
+
+td p {
+    @apply capitalize text-base font-semibold
+}
+
+#zoid-paypal-buttons-uid_ef7ead1308_mdk6mtq6ndy > iframe.component-frame {
+    z-index: 1!important;
+}
+
+#zoid-paypal-buttons-uid_1fdc99263f_mty6mzk6mda > iframe.component-frame {
+    z-index: 1!important;
+}
